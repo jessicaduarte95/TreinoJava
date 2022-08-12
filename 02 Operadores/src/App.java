@@ -73,5 +73,30 @@ public class App {
 
         boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
         System.out.println("É possível comprar o playstation? " + isPlaystationCincoCompravel);
+
+
+        // Operadores de Atribuição (=, +=, -=, *=, /=, %=)
+        double bonus = 1800;
+        //bonus = bonus + 1000;
+        bonus += 1000;
+        bonus *= 2;
+        System.out.println("Bônus: " + bonus);
+
+        int contador = 0;
+        contador += 1; // contador = contador + 1
+        contador ++; // contador = contador + 1
+        contador --; // contador = contador - 1
+        // Existe diferença entre colocar os sinais de ++ ou de -- na frente ou atrás.
+        ++ contador;
+        -- contador;
+        System.out.println("Contador: " + contador);
+        // Quando é colocado depois.
+        int contador2 = 0;
+        System.out.println("Contador2: " + contador2++); // Valor zero, pois primeiro imprime a variável e depois incrementa.
+        System.out.println("Contador2PassaASerUm: " + contador2); // Passa a ser um, pois foi incrementado depois.
+        // Quando é colocado antes.
+        int contador3 = 0;
+        System.out.println("Contador3: " + ++contador3); // Valor igual a um, primeiro incrementa e depois executa.
+        System.out.println("Contador3ContinuaUm: " + contador3);
     }
 }
