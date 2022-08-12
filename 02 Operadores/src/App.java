@@ -52,5 +52,26 @@ public class App {
         boolean isDezDiferenteVinte = 10 != 20;
         System.out.println(isDezDiferenteVinte);
 
+
+        // Operadores Lógicos (AND -> &&)
+        // São usados em estruturas condicionais.
+        int idade = 35;
+        float salario = 3500F;
+        boolean isDentroDaLeiMaiorQueTrinta = idade > 30 && salario > 4612;
+        System.out.println("Está dentro da Lei (Maior que trinta)? " + isDentroDaLeiMaiorQueTrinta); 
+        boolean isDentroDaLeiMenorQueTrinta = idade < 30 && salario >= 3300;
+        System.out.println("Está dentro da Lei (Menor que trinta)? " + isDentroDaLeiMenorQueTrinta); 
+        // Para ser verdade todas as condições precisam ser verdade
+        boolean isTudoVerdadeiro = idade > 30 && salario <= 3500;
+        System.out.println("Obtendo um resultado verdadeiro: " + isTudoVerdadeiro);
+
+
+        // Operadores Lógicos (OU -> ||)
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlaystation = 5000;
+
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+        System.out.println("É possível comprar o playstation? " + isPlaystationCincoCompravel);
     }
 }
