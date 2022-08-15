@@ -65,5 +65,28 @@ public class EstruturasCondicionais {
         // Pode ser feito da forma abaixo, porém não é recomenado.
         categoria = idade2 < 15 ? "Categoria Infantil" : idade2 >=15 && idade2 < 18 ? "Categoria Juvenil" : "Categoria Adulto";
         System.out.println("Categoria com Ternário: " + categoria);
+
+        // Tabela Verdade
+        /* E => Para ser verdadeiro todas as condições precisam ser verdadeiras. Falso é mais forte.
+           OU => Para ser falso todas as condições precisam ser falsa. Verdadeiro é mais forta.
+         */
+
+        // Exercício
+        double salarioAnual = 70000;
+        double primeiraFaixa = 9.7/100;
+        double segundaFaixa = 37.35/100;
+        double terceiraFaixa = 49.5/100;
+        double valorImposto;
+        
+        if (salarioAnual <= 34712){
+            valorImposto = salarioAnual*primeiraFaixa;
+        }else if (salarioAnual > 34712 && salarioAnual <= 68508){
+            valorImposto = salarioAnual*segundaFaixa;
+        }else{
+            valorImposto = salarioAnual*terceiraFaixa;
+        }
+
+        System.out.println(valorImposto);
+
     }
 }
