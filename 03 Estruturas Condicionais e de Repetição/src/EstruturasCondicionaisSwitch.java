@@ -1,4 +1,4 @@
-public class CondicionaisSwitch {
+public class EstruturasCondicionaisSwitch {
     public static void main(String[] args) {
         //Imprima o dia da semana, considerando 1 como domingo.
 
@@ -41,6 +41,22 @@ public class CondicionaisSwitch {
                 System.out.println("Feminnino");
                 break;
             }
+        }
+
+        // Exercício
+        // Dados os valores de 1 a 7, imprima se é dia útil ou final de semana, considerando 1 como domingo.
+
+        byte diaSemana= 5;
+
+        switch (diaSemana){
+            case 2,3,4,5,6:
+                System.out.println("Dia Útil!");
+                break;
+            case 1,7:
+                System.out.println("Final de Semana");
+                break;
+            default:
+                System.out.println("Opção Inválida");
         }
     }
     
