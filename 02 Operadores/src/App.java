@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) {
 
-        // Operadores Aritiméticos (utilização de matemática com os números, +, *, /,-)
+        // Operadores Aritméticos (utilização de matemática com os números, +, *, /,-)
         int numero01 = 10;
         int numero02 = 20;
         System.out.println(numero02 - numero01);

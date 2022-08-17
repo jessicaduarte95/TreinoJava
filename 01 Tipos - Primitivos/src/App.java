@@ -43,7 +43,7 @@ public class App {
 
         String nome = "Jéssica";
         String endereco = "Condomínio NH, conjunto D, casa 1";
-        double salario = 1500;
+        double salario = 3500;
         String dataRecebimento = "5 de agosto de 2022.";
 
         System.out.println("Eu " + nome + ", " + "morando no endereço " + endereco + ", " + "confirmo que recebi o salário de " + 
