@@ -34,5 +34,32 @@ public class Arrays {
 
         nomes =  new String[5]; // Passa a receber 5.
 
+        // Formas de Inicialização
+
+        int[] numeros = new int[3];
+        System.out.println(numeros);
+
+        int[] numeros2 = {1,2,3,4,5}; // Inicializando diretamente com os valores.
+        for(int i = 0; i < numeros2.length; i++){
+            System.out.println("Numeros2: " + numeros2[i]);
+        }
+
+        // Outra forma de inicializar já com os valores
+        int[] numeros3 = new int[] {1,2,3,4,5};
+        for(int i = 0; i < numeros3.length; i++){
+            System.out.println("Numeros3: " + numeros3[i]);
+        }
+
+        // Forecach
+
+        int[] numeros4 = new int[] {1,2,3,4,5};
+        // num é uma variável local
+        for(int num : numeros4){
+            System.out.println(num);
+        }
+
+        // O tipo tem que ser o mesmo do array, por exemplo, se o num é int, o array precisa ser int.
+        // Esse for de cima não dá os índices específicos. É apenas uma versão simplificada do for.
+        
     }
 }
