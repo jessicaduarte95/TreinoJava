@@ -33,5 +33,26 @@ public class ArraysMultidimencionais {
             }
         }
 
+        // Treino
+
+        String[][] veiculos = new String [3][4];
+
+        veiculos[0][1] = "Carro A";
+        veiculos[0][2] = "Carro B";
+        veiculos[0][3] = "Carro C";
+
+        veiculos[1][1] = "Moto A";
+        veiculos[1][2] = "Moto B";
+        veiculos[1][3] = "Moto C";
+
+        veiculos[2][1] = "Caminhão A";
+        veiculos[2][2] = "Caminhão B";
+        veiculos[2][3] = "Caminhão C";
+
+        for (int i = 0; i < veiculos.length; i++) {
+            for(int j = 0; j < veiculos[i].length; j++) {
+                System.out.println(veiculos[i][j]);
+            }
+        }
     }
 }
