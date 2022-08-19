@@ -54,5 +54,50 @@ public class ArraysMultidimencionais {
                 System.out.println(veiculos[i][j]);
             }
         }
+
+        // Formas de inicialização 
+
+        int[][] arrayInt = new int [3][];
+
+        arrayInt[0] = new int [2];
+        arrayInt[1] = new int [3];
+        arrayInt[2] = new int [4];
+
+        for (int[] arrayBase: arrayInt){
+            System.out.println("\n------------");
+            for(int num: arrayBase){
+                System.out.print(num + " ");
+            }
+        }
+
+
+        int[][] array = new int [3][];
+        array[0] = new int [2];
+        array[1] = new int []{1,2,3};
+        array[2] = new int []{1,2,3,4,5,6};
+
+        for(int[] arr: array){
+            System.out.println("\n------------");
+            for(int num: arr){
+                System.out.println(num + " ");
+            }
+        }
+
+        int[] arrayTeste = {1,2,3};
+        int[][] arrayNew = new int[3][];
+
+        arrayNew[0] = new int [2];
+        arrayNew[1] = arrayTeste;
+        arrayNew[2] = new int []{1,2,3,4,5,6};
+
+
+
+        int[][] arrayInt2 = {{0,0},{1,2,3},{1,2,3,4,5,6}};
+        for (int i = 0; i < arrayInt2.length; i++) {
+            for (int j = 0; j < arrayInt2[i].length; j++) {
+                System.out.println("Array Int2: " + arrayInt2[i][j]);
+            }
+        }
+
     }
 }
