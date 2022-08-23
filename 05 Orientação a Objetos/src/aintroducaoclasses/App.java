@@ -1,4 +1,4 @@
-package introducaoclasses;
+package aintroducaoclasses;
 public class App {
     public static void main(String[] args) throws Exception {
         // Introdução - Classes

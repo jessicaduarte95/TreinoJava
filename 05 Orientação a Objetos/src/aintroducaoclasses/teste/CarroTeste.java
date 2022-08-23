@@ -1,6 +1,6 @@
-package introducaoclasses.teste;
+package aintroducaoclasses.teste;
 
-import introducaoclasses.dominio.Carro;
+import aintroducaoclasses.dominio.Carro;
 
 public class CarroTeste {
 

@@ -1,4 +1,4 @@
-package introducaoclasses.dominio;
+package aintroducaoclasses.dominio;
 
 
 // A parte do domínio geralmente representa a parte de negócio, o que geralmente vai para o banco de dados.

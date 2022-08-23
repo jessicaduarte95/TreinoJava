@@ -1,6 +1,6 @@
-package introducaoclasses.teste;
+package aintroducaoclasses.teste;
 
-import introducaoclasses.dominio.Estudante;
+import aintroducaoclasses.dominio.Estudante;
 
 public class EstudanteTeste01 {
     public static void main(String[] args) {
