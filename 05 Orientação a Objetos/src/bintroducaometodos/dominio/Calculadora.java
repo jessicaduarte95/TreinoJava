@@ -65,4 +65,25 @@ public class Calculadora {
         System.out.println("Num1 " + num1);
         System.out.println("Num2 " + num2);
     }
+
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for (int num: numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    // VarArgs
+
+    // Se usar VarArgs não se pode ter atributos depois.
+    // Se usar atributos antes, os primeiros números passados (domínio.Calculadora, por exemplo) serão usados
+    // no atributos passados e o resto dos números serão usados no VarArgs. 
+    public void somaVarArgs(int...numeros){ // Funciona como um Array, VarArgs foi criado para mais simples.
+        int soma = 0;
+        for (int num: numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
 }
