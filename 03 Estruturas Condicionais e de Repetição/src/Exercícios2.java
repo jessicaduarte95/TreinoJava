@@ -82,7 +82,11 @@ public class Exercícios2 {
         /*Crie um algoritmo leia um número do usuário e exiba a sua tabuada de
         Multiplicação.*/
 
+        int numUsuario = 2;
 
+        for(int i = 1; i <= 10; i++){
+            System.out.println("Resultado Tabuada: " + numUsuario * i);
+        }
 
         /*Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são
         maiores do que 8.*/
@@ -140,6 +144,19 @@ public class Exercícios2 {
 
         /*Escreva um algoritmo que leia uma sequência de números do usuário e realize a
         soma desses números. Encerre a execução quando um número negativo for digitado.*/
+
+        int[] numerosSequencia = {1,2,3,4,5,-6,7};
+        int somandoValores = 0;
+
+        for(int i = 0; i < numerosSequencia.length; i++){
+            if (numerosSequencia[i] < 0){
+                break;
+            }else{
+                somandoValores = somandoValores + numerosSequencia[i];
+            }
+        }
+
+        System.out.println("Soma dos números: " + somandoValores);
 
     }
 }
