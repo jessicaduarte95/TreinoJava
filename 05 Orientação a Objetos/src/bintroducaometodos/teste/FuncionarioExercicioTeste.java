@@ -12,9 +12,9 @@ public class FuncionarioExercicioTeste {
         funcionario.setIdade(55);
         funcionario.setSalarios(numeros);
 
-        System.out.println(funcionario.getNome());
-        System.out.println(funcionario.getIdade());
-        System.out.println(funcionario.getSalarios());
+        funcionario.imprime();
+
+        System.out.println("Média: " + funcionario.getMedia());
 
     }
 }
