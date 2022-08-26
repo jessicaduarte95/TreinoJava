@@ -27,6 +27,15 @@ public class Anime {
         System.out.println(this.genero);
     }
 
+    // Construtores não possuem nenhum tipo de retorno
+    // Anime -> Representa o nome da classe, o construtor terá o mesmo nome.
+    public Anime(){
+
+    }
+
+    // Caso você não escreva um construtor no meio da classe, o java adiciona um no meio da compilação.
+    // Pois é necessário ter um construtor para dar origem a um objeto.
+
     public void setGenero(String genero){
         this.genero = genero;
     }
