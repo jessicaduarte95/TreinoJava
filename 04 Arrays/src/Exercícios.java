@@ -50,7 +50,21 @@ public class Exercícios {
         /*Criar e inicializar um array de inteiros de tamanho 10. Criar também um fluxo que vai ler
         os dados desse array e ao final dizer quantos valores são pares e quantos são ímpares.*/
 
+        int[] numArrays = {1,2,3,4,5,6,7,8,9,11}; 
 
+        int par = 0;
+        int impar = 0;
+
+        for (int i =0; i < numArrays.length; i++){
+            if(numArrays[i] % 2 ==  0){
+                par += 1;
+            }else if(numArrays[i] % 2 == 1){
+                impar += 1;
+            }
+        }
+
+        System.out.println("Quantidade de Números pares: " + par);
+        System.out.println("Quantidade de Números ímpares: " + impar);
 
         /*Criar e inicializar um array de 10 posições que vai receber 10 valores inteiros. Criar
         também um fluxo que vai ler o array e ao final exibir os seguintes dados:
@@ -59,6 +73,31 @@ public class Exercícios {
         c. Quantos valores são múltiplos de 5
         d. Qual a soma total dos valores.*/
 
+        int[] numeros = {20, 30, 40, 12, -6, -7, 3, 8, -9, 10};
+
+        int maiorQueQuinze = 0;
+        int numNegativos = 0;
+        int multiplosDeCinco =0;
+        int somaValores = 0;
+
+        for(int i =0; i < numeros.length; i++){
+
+            somaValores = somaValores + numeros[i];
+            if (numeros[i] > 15){
+                maiorQueQuinze += 1;
+            } 
+            if(numeros[i] < 0){
+                numNegativos += 1;
+            } 
+            if(numeros[i] % 5 == 0){
+                multiplosDeCinco += 1;
+            }
+        }
+
+        System.out.println("Quantidade de números maiores que quinze: " + maiorQueQuinze);
+        System.out.println("Quantidade de números negativos: " + numNegativos);
+        System.out.println("Quantidade de números múltiplos de cinco: " + multiplosDeCinco);
+        System.out.println("Soma total: " + somaValores);
 
 
         /*Criar um array do tipo String de 10 posições e inicializar. Para cada iteração do for, o
@@ -69,10 +108,15 @@ public class Exercícios {
 
 
 
-        /*Criar um array de tipo inteiro de 100 posições que vai receber valores de 0 a 100.
+        /*Criar um array de tipo inteiro de 10 posições que vai receber valores de 0 a 10.
         Inicializar esse valores usando um laço de Repetição. E utilizando o foreach, printar
         todos os valores multiplicando por 2.*/
 
-        
+        int[] numVezesDois = {1,2,3,4,5,6,7,8,9,10};
+
+        for (int i : numVezesDois) {
+            System.out.print(i * 2 + " ");  
+        } 
+
     }
 }
