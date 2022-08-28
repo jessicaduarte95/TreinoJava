@@ -77,6 +77,19 @@ public class Exercícios2 {
 
         /*Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.*/
 
+        String[] nomePessoas = {"João", "Maria", "Joaquim", "Joaquina", "José", "Jéssica", "Marcos", "Pedro", "Bianca", "Juliana"};
+        int[] idadePessoas =  {35, 60, 34, 55, 11, 34, 75, 8, 13, 86};
+        String nomePessoaMaisNova = "";
+        int idadeMaisNova = 130;
+
+        for (int i = 0; i < idadePessoas.length; i++) {
+            if(idadePessoas[i] < idadeMaisNova){
+                idadeMaisNova = idadePessoas[i];
+                nomePessoaMaisNova = nomePessoas[i];
+            }
+        }
+        System.out.println("Idade da Pessoa Mais Nova: " + idadeMaisNova);
+        System.out.println("Nome da Pessoa Mais Nova: " + nomePessoaMaisNova);
 
 
         /*Crie um algoritmo leia um número do usuário e exiba a sua tabuada de
