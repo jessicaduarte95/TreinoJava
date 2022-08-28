@@ -106,6 +106,93 @@ public class Exercícios {
         b. Nome nome
         c. Nome nome casa*/
 
+        String[] arrayWord = {"caneta", "lapis", "estojo", "caderno", "livro", "cadeira", "mesa", "quadro", "giz", "apagador"};
+        String[] arrayResultado = new String[10];
+
+        for (int i = 0; i < arrayWord.length; i++) {
+            arrayResultado[i] = arrayWord[i];
+            switch(i){
+                case 0: {
+                    System.out.println(arrayResultado[i]);
+                    break;
+                }
+                case 1: {
+                    System.out.println(arrayResultado[0] + " " + arrayResultado[i]);
+                    break;
+                }
+                case 2: {
+                    System.out.println(arrayResultado[0] + " " + arrayResultado[1] + " " + arrayResultado[2]);
+                    break;
+                }
+                case 3: {
+                    System.out.println(arrayResultado[0] + " " + arrayResultado[1] + " " + arrayResultado[2]+ " " + arrayResultado[3]);
+                    break;
+                }
+                case 4: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]);
+                    break;
+                }
+                case 5: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]+ " " +
+                    arrayResultado[5]);
+                    break;
+                }
+                case 6: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]+ " " +
+                    arrayResultado[5]+ " " + 
+                    arrayResultado[6]);
+                    break;
+                }
+                case 7: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]+ " " +
+                    arrayResultado[5]+ " " + 
+                    arrayResultado[6]+ " " +
+                    arrayResultado[7]);
+                    break;
+                }
+                case 8: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]+ " " +
+                    arrayResultado[5]+ " " + 
+                    arrayResultado[6]+ " " +
+                    arrayResultado[7]+ " " +
+                    arrayResultado[8]);
+                    break;
+                }
+                case 9: {
+                    System.out.println(arrayResultado[0] + " " + 
+                    arrayResultado[1] + " " + 
+                    arrayResultado[2]+ " " + 
+                    arrayResultado[3]+ " " +
+                    arrayResultado[4]+ " " +
+                    arrayResultado[5]+ " " + 
+                    arrayResultado[6]+ " " +
+                    arrayResultado[7]+ " " +
+                    arrayResultado[8]+ " " +
+                    arrayResultado[9]);
+                    break;
+                }
+            }
+        }
 
 
         /*Criar um array de tipo inteiro de 10 posições que vai receber valores de 0 a 10.
