@@ -11,6 +11,24 @@ public class Funcionario extends Pessoa{
     // Herança múltipla não existe no java, não se pode estender mais de uma classe.
     // protected -> dá acesso a todos os atributos, como se o atributo estivesse na própria classe.
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de funcionário.");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização não estático de funcionário 1.");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização não estático de funcionário 2.");
+    }
+
+    // Construtor de Herança
+    public Funcionario(String nome){
+        super(nome);
+        System.out.println("Dentro do construtor de funcionário.");
+    }
+
     public void imprime(){
         super.imprime();
         System.out.println(this.salario);
