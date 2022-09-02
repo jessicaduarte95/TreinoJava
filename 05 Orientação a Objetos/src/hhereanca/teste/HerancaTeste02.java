@@ -1,10 +1,10 @@
 package hhereanca.teste;
 
-import hhereanca.dominio.Funcionario;
+// import hhereanca.dominio.Funcionario;
 
 public class HerancaTeste02 {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario("Nome teste");
+        // Funcionario funcionario = new Funcionario("Nome teste");
 
         // 00 - Bloco de inicialização (estático) da super classe é executado quando a classe pai é carregada.
         // 01 - Bloco de inicialização (estático) da sub classe é executado quando a classe filha é carregada.
